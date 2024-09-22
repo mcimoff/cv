@@ -61,7 +61,7 @@ header{
     font-size: 35px;
     z-index: 101%; /*Para que este sobre el header*/
     cursor: pointer; /*Para que aparezca la manito sobre el icono*/
-
+    display: none;
 }
 
 #menu-toggle{
@@ -114,6 +114,7 @@ section{
 .hero-img img{
     width: 400px;
     margin: 10% 0 0 10%;
+    border-radius: 50%;
     height: auto;
     transition: all 5s linear; /*Esto hace que la transición sea lineal*/
 }
@@ -122,6 +123,51 @@ section{
     width: 450px;
     opacity: 0.6;
 }
+
+/*Logro*/
+
+.logro-div{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75% ); /*fondo de color gradiente*/
+    font-size: 70px;
+    font-weight: 400px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.logro-img{
+    image-rendering: auto;
+    image-resolution: 10;
+    width: 570px;
+    height: 1000px;
+    
+}
+
+/*CV*/
+
+.cv-div{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75% ); /*fondo de color gradiente*/
+    font-size: 70px;
+    font-weight: 400px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.cv{
+    image-rendering: auto;
+    image-resolution: 10;
+    width: 570px;
+    height: 950px;
+    
+}
+
+
+
 
 .hero-text a{
     display: inline-block;
@@ -190,6 +236,32 @@ section{
 
 .scroll-down i:hover{
     transform: translateY(-5px);
+}
+
+/*Contacto*/
+
+.contacto-div{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background:  linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75% ); /*fondo de color gradiente*/
+    font-size: 40px;
+    font-weight: 400px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.contacto-mail{
+    border: 2px solid rgb(25, 136, 214);
+    background-color: rgb(30, 172, 176);
+    border-radius: 2%;
+    transition: all ,3s ease;
+}
+
+.contacto-mail:hover{
+    background-color: transparent;
+    transform: initial;
 }
 
 /*Aca vamos a hacer mediasqueries para que la web sea responsive*/
@@ -273,9 +345,10 @@ section{
 
     }
 
-    #menu-toggle:checked + label.menu-icon-action + ul{
+    .navlist.open{ /*Edita el right a 0 desde el JS*/
         right: 0;
     }
+
 
     
 }
