@@ -162,7 +162,7 @@ section{
     image-rendering: auto;
     image-resolution: 10;
     width: 600px;
-    height: 800px;
+    height: 780px;
     
 }
 
@@ -262,6 +262,24 @@ section{
 .contacto-mail:hover{
     background-color: transparent;
     transform: initial;
+}
+
+/*scroll*/
+
+.scroll-container {
+    height: 900px; /* Altura fija para que el scroll sea visible */
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+    border: 1px solid #ccc; /* Bordes para diferenciar el contenedor */
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#buttonScroll{
+    color: black;
+    background-color: whitesmoke;
+    
+    
+    
 }
 
 /*Aca vamos a hacer mediasqueries para que la web sea responsive*/

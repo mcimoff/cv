@@ -21,3 +21,11 @@ sr.reveal('.hero-text', {delay: 200, origin: 'top'})
 sr.reveal('.hero-img', {delay: 450, origin: 'top'})
 sr.reveal('.icons', {delay: 500, origin: 'left'})
 sr.reveal('.scroll-down', {delay: 450, origin: 'right'})
+
+function scrollToTop() {
+    const container = document.getElementById('scrollContainer');
+    container.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Hacer el scroll suave
+    });
+}
