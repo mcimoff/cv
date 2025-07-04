@@ -4,394 +4,395 @@
 /* NORMALIZACIÓN  */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; /*Esto mantiene el ancho y largo a pesar de padding y border*/
-    font-family: 'Iconsolata', monospace;
-    list-style: none; /*Quitar los puntos y decoración de las líneas*/
-    text-decoration: none; /*Esto quita el subrayado de los enlaces*/
-    color: white;
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*Esto mantiene el ancho y largo a pesar de padding y border*/
+  font-family: "Iconsolata", monospace;
+  list-style: none; /*Quitar los puntos y decoración de las líneas*/
+  text-decoration: none; /*Esto quita el subrayado de los enlaces*/
+  color: white;
 }
 
-body{
-    background-color: black; /*TODO: Borrar cuando tengamos el fondo final*/
+body {
+  background-color: black; /*TODO: Borrar cuando tengamos el fondo final*/
 }
 
-header{
-    position: fixed; /*Esto hace que el header se quedo fijo en la parte superior*/
-    right: 0;
-    top: 0;
-    z-index: 100; /*Esto hace que el header se muestre por encima*/
-    width: 100%;
-    display: flex; /*Esto hará que los elementos se pongan en línea*/
-    align-items: center; /*Centra verticalmente*/
-    justify-content: space-between; /*Los elementos se separen*/
-    padding: 15px 3%;
-    background-color: transparent;
+header {
+  position: fixed; /*Esto hace que el header se quedo fijo en la parte superior*/
+  right: 0;
+  top: 0;
+  z-index: 100; /*Esto hace que el header se muestre por encima*/
+  width: 100%;
+  display: flex; /*Esto hará que los elementos se pongan en línea*/
+  align-items: center; /*Centra verticalmente*/
+  justify-content: space-between; /*Los elementos se separen*/
+  padding: 15px 3%;
+  background-color: transparent;
 }
 
-.logo{
-    font-size: 30px;
-    font-weight: 800; /*Este es el grueso de las letras*/
+.logo {
+  font-size: 30px;
+  font-weight: 800; /*Este es el grueso de las letras*/
 }
 
-.navlist{
-    display: flex; /*Esto sirve para que los elementos de la lista UL se pongan en línea*/
+.navlist {
+  display: flex; /*Esto sirve para que los elementos de la lista UL se pongan en línea*/
 }
 
-.navlist a{
-    margin-left: 60px; /*Es para separar las palabras*/
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent; /*Este es un subrayado transparente*/
-    transition: all .5s ease; /*Este es para animar todas las caracteristicas del .navlist a*/
+.navlist a {
+  margin-left: 60px; /*Es para separar las palabras*/
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent; /*Este es un subrayado transparente*/
+  transition: all 0.5s ease; /*Este es para animar todas las caracteristicas del .navlist a*/
 }
 
-.navlist a:hover{
-    border-bottom: 2px solid white; /*Este es un subrayado blanco, que aparacera cuando hacemos hover*/
+.navlist a:hover {
+  border-bottom: 2px solid white; /*Este es un subrayado blanco, que aparacera cuando hacemos hover*/
 }
 
-#menu-icon{
-    display: none; /*Esto lo pongo en none, para que solo se vea el icono cuando la pagina este colapsada*/
+#menu-icon {
+  display: none; /*Esto lo pongo en none, para que solo se vea el icono cuando la pagina este colapsada*/
 }
 
-#menu-icon{
-    
-    font-size: 35px;
-    z-index: 101%; /*Para que este sobre el header*/
-    cursor: pointer; /*Para que aparezca la manito sobre el icono*/
-    display: none;
+#menu-icon {
+  font-size: 35px;
+  z-index: 101%; /*Para que este sobre el header*/
+  cursor: pointer; /*Para que aparezca la manito sobre el icono*/
+  display: none;
 }
 
-#menu-toggle{
-    display: none; /*Este nonne se pone para que nunca se vea este checkbox, solo lo usamos para hacer el truco del icon*/
+#menu-toggle {
+  display: none; /*Este nonne se pone para que nunca se vea este checkbox, solo lo usamos para hacer el truco del icon*/
 }
 
-#menu-icon-action{
-    display: block; /*Para que no se le pueda hacer click*/
+#menu-icon-action {
+  display: block; /*Para que no se le pueda hacer click*/
 }
 
-.hero{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75% ); /*fondo de color gradiente*/
-    position: relative; /*Para que sea relativo al contenedor (Nos permite usar top, bottom, left y right)*/
-    display: grid; /*Para que el hero se puede dividir en dos columnas*/
-    grid-template-columns: 1fr 1fr; /*Las dos columnas*/
-    align-items: center; /*Para aliniear verticalmente el hero*/
-    gap: 2rem; /*Para que haya espacio de 2 rem entre las dos columnas */
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    245.59deg,
+    #31494e 0%,
+    #385e70 25%,
+    #131313 75%
+  ); /*fondo de color gradiente*/
+  position: relative; /*Para que sea relativo al contenedor (Nos permite usar top, bottom, left y right)*/
+  display: grid; /*Para que el hero se puede dividir en dos columnas*/
+  grid-template-columns: 1fr 1fr; /*Las dos columnas*/
+  align-items: center; /*Para aliniear verticalmente el hero*/
+  gap: 2rem; /*Para que haya espacio de 2 rem entre las dos columnas */
 }
 
-section{
-    padding: 0 8%;
+section {
+  padding: 0 8%;
 }
 
-.hero-text h5{
-    font-size: 14px;
-    font-weight: 400px;
-    margin-bottom: 25px;
+.hero-text h5 {
+  font-size: 14px;
+  font-weight: 400px;
+  margin-bottom: 25px;
 }
-.hero-text h4{
-    font-size: 18px;
-    font-weight: 600px;
-    margin-bottom: 25px;
+.hero-text h4 {
+  font-size: 18px;
+  font-weight: 600px;
+  margin-bottom: 25px;
 }
-.hero-text h1{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 40px;
-    line-height: 1;
-    margin: 0 0 30px;
-}
-
-.hero-text p{
-    font-size: 80%;
-    margin-bottom: 40px;
-    line-height: 40px;
+.hero-text h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  line-height: 1;
+  margin: 0 0 30px;
 }
 
-.hero-img img{
-    width: 400px;
-    margin: 10% 0 0 10%;
-    border-radius: 50%;
-    height: auto;
-    transition: all 5s linear; /*Esto hace que la transición sea lineal*/
+.hero-text p {
+  font-size: 80%;
+  margin-bottom: 40px;
+  line-height: 40px;
 }
 
-.hero-img img:hover{
-    width: 450px;
-    opacity: 0.6;
+.hero-img img {
+  width: 300px;
+  margin: 10% 0 0 10%;
+  border-radius: 50%;
+  height: auto;
+  transition: all 5s linear; /*Esto hace que la transición sea lineal*/
+}
+
+.hero-img img:hover {
+  width: 450px;
+  opacity: 0.6;
 }
 
 /*Logro*/
 
-.logro-div{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75% ); /*fondo de color gradiente*/
-    font-size: 70px;
-    font-weight: 400px;
-    margin-bottom: 25px;
-    text-align: center;
+.logro-div {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    245.59deg,
+    #31494e 0%,
+    #385e70 25%,
+    #131313 75%
+  ); /*fondo de color gradiente*/
+  font-size: 70px;
+  font-weight: 400px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
-.logro-img{
-    image-rendering: auto;
-    image-resolution: 10;
-    width: 500px;
-    height: 730px;
-    
+.logro-img {
+  image-rendering: auto;
+  image-resolution: 10;
+  width: 500px;
+  height: 730px;
 }
 
 /*CV*/
 
-.cv-div{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75% ); /*fondo de color gradiente*/
-    font-size: 70px;
-    font-weight: 400px;
-    margin-bottom: 25px;
-    text-align: center;
+.cv-div {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    245.59deg,
+    #31494e 0%,
+    #385e70 25%,
+    #131313 75%
+  ); /*fondo de color gradiente*/
+  font-size: 70px;
+  font-weight: 400px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
-.cv{
-    image-rendering: auto;
-    image-resolution: 10;
-    width: 600px;
-    height: 780px;
-    
+.cv {
+  image-rendering: auto;
+  image-resolution: 150;
+  width: 650px;
+  height: 750px;
 }
 
-
-
-
-.hero-text a{
-    display: inline-block;
-    background-color: #31494e;
-    border: 1px solid transparent;
-    padding: 15px 30px;
-    line-height: 1.4;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 30px;
-    text-transform: uppercase;
-    transition: all .5s ease;
+.hero-text a {
+  display: inline-block;
+  background-color: #31494e;
+  border: 1px solid transparent;
+  padding: 15px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
 }
 
-.hero-text a:hover{
-    background-color: transparent;
-    border: 1px solid white;
-    transform: translateX(8px);
+.hero-text a:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
 }
 
-.hero-text a.trofeos{
-    background-color: transparent;
-    border: 1px solid white;
-    margin-left: 20px;
+.hero-text a.trofeos {
+  background-color: transparent;
+  border: 1px solid white;
+  margin-left: 20px;
 }
 
-.hero-text a.trofeos i{
-    vertical-align: middle;
-    margin-right: 5px;
+.hero-text a.trofeos i {
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
-.icons{
-    position: absolute;
-    top: 50vh;
-    padding: 0 3%;
-    transform: translateY(-50%);
+.icons {
+  position: absolute;
+  top: 50vh;
+  padding: 0 3%;
+  transform: translateY(-50%);
 }
 
-.icons i{
-    display: block;
-    margin: 26px 0;
-    font-size: 30px;
-    transition: all .5s ease;
-
+.icons i {
+  display: block;
+  margin: 26px 0;
+  font-size: 30px;
+  transition: all 0.5s ease;
 }
 
-.icons i:hover{
-    color: #31494e;
-    transform: translateY(-5px);
+.icons i:hover {
+  color: #31494e;
+  transform: translateY(-5px);
 }
 
-.scroll-down{
-    position: absolute;
-    bottom: 6%;
-    right: 3%;
+.scroll-down {
+  position: absolute;
+  bottom: 6%;
+  right: 3%;
 }
 
-.scroll-down i{
-    display: block;
-    padding: 12px;
-    font-size: 25px;
-    background-color: #21383d;
-    border-radius: 30px;
-    transition: all .5s ease;
+.scroll-down i {
+  display: block;
+  padding: 12px;
+  font-size: 25px;
+  background-color: #21383d;
+  border-radius: 30px;
+  transition: all 0.5s ease;
 }
 
-.scroll-down i:hover{
-    transform: translateY(-5px);
+.scroll-down i:hover {
+  transform: translateY(-5px);
 }
 
 /*Contacto*/
 
-.contacto-div{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background:  linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75% ); /*fondo de color gradiente*/
-    font-size: 40px;
-    font-weight: 400px;
-    margin-bottom: 25px;
-    text-align: center;
-    padding-top: 200px;
+.contacto-div {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    245.59deg,
+    #31494e 0%,
+    #385e70 25%,
+    #131313 75%
+  ); /*fondo de color gradiente*/
+  font-size: 40px;
+  font-weight: 400px;
+  margin-bottom: 25px;
+  text-align: center;
+  padding-top: 200px;
 }
 
-.contacto-mail{
-    border: 2px solid rgb(25, 136, 214);
-    background-color: rgb(30, 172, 176);
-    border-radius: 2%;
-    transition: all ,3s ease;
+.contacto-mail {
+  border: 5px solid rgb(25, 136, 214);
+  background-color: rgb(30, 172, 176);
+  border-radius: 2%;
+  transition: all, 2s ease;
 }
 
-.contacto-mail:hover{
-    background-color: transparent;
-    transform: initial;
+.contacto-mail:hover {
+  background-color: transparent;
+  color: black;
+  transform: initial;
 }
 
 /*scroll*/
 
 .scroll-container {
-    height: 900px; /* Altura fija para que el scroll sea visible */
-    overflow-y: auto; /* Permite el desplazamiento vertical */
-    border: 1px solid #ccc; /* Bordes para diferenciar el contenedor */
-    padding: 10px;
-    background-color: #f9f9f9;
+  height: 900px; /* Altura fija para que el scroll sea visible */
+  overflow-y: auto; /* Permite el desplazamiento vertical */
+  border: 1px solid #ccc; /* Bordes para diferenciar el contenedor */
+  padding: 10px;
+  background-color: #f9f9f9;
 }
 
-#buttonScroll{
-    color: black;
-    background-color: whitesmoke;
-    
-    
-    
+#buttonScroll {
+  color: black;
+  background-color: whitesmoke;
 }
 
 /*Aca vamos a hacer mediasqueries para que la web sea responsive*/
 
-@media (max-width: 992px){
-    section{
-        padding: 0 3%;
-        transition: .2s;
-    }
-    
-    .hero-text{
-        padding-top: 0;
-    }
+@media (max-width: 992px) {
+  section {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
 
-    .hero-img{
-        text-align: center;
-    }
+  .hero-text {
+    padding-top: 0;
+  }
 
-    .hero-img img{
-        width: 80%;
-        margin: 10% 0 0 10%;
-    }
+  .hero-img {
+    text-align: center;
+  }
 
-    .hero-text p{
-        font-size: 70%;
-    }
- 
-    .icons{
-        display: none;
-    }
+  .hero-img img {
+    width: 80%;
+    margin: 10% 0 0 10%;
+  }
 
-    .scroll-down{
-        display: none;
-    }
+  .hero-text p {
+    font-size: 70%;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .scroll-down {
+    display: none;
+  }
 }
 
-@media (max-width: 768px){
-    
+@media (max-width: 768px) {
+  .menu-icon-action {
+    display: block;
+  }
 
-    .menu-icon-action{
-        display: block;
-    }
+  #menu-icon {
+    display: block;
+  }
 
-    #menu-icon{
-        display: block;
-    }
+  .hero-text {
+    text-align: center;
+    padding-top: 100px;
+  }
 
-    .hero-text{
-        text-align: center;
-        padding-top: 100px;
+  .hero-img img {
+    margin: 0;
+  }
 
-    }
+  .hero {
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
 
-    .hero-img img{
-        margin: 0;
-    }
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 200px;
+    height: 200px;
+    background-color: #050f1fe2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    transition: all 0.5s ease;
+  }
 
-    .hero{
-        height: 100%;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-    }
+  .navlist a {
+    display: block;
+    margin: 7px 0;
+  }
 
-    .navlist{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 200px;
-        height: 200px;
-        background-color: #050f1fe2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
-        transition: all .5s ease;
-    }
+  .navlist.open {
+    /*Edita el right a 0 desde el JS*/
+    right: 0;
+  }
 
-    .navlist a{
-        display: block;
-        margin: 7px 0;
+  .cv-div {
+    font-size: 40px;
+    font-weight: 300px;
+  }
 
-    }
+  /*Contacto*/
 
-    .navlist.open{ /*Edita el right a 0 desde el JS*/
-        right: 0;
-    }
+  .cv {
+    image-rendering: auto;
+    image-resolution: 10;
+    width: 320px;
+    height: 700px;
+  }
 
-    
-    .cv-div{
-        font-size: 40px;
-        font-weight: 300px;
-    }
-
-    /*Contacto*/
-    
-    .cv{
-        image-rendering: auto;
-        image-resolution: 10;
-        width: 320px;
-        height: 700px;
-        
-    }
-    
-    
-    .contacto-div{
+  .contacto-div {
     font-size: 25px;
     font-weight: 400px;
     margin-bottom: 25px;
     text-align: center;
     padding-top: 300px;
-    }
-
-
-    
+  }
 }
